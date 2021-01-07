@@ -1,0 +1,1215 @@
+.home {
+  overflow-x: hidden;
+  background: #ffffff;
+
+  @include BR480Down {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  h1 {
+    font-family: 'Vanitas';
+    font-weight: 400;
+  }
+
+  #primary {
+    padding-top: 0;
+
+    @include BR480Down {
+      padding-top: 0;
+    }
+  }
+
+  .home__hero {
+
+    &--slider {
+      width: 100%;
+
+      .slick-arrow {
+        position: absolute;
+        z-index: 99999999;
+        bottom: 44%;
+        background-size: 48px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: transparent;
+        border: none;
+        color: transparent;
+        outline-offset: 12px;
+
+        @include BR480Down {
+          display: none !important;
+        }
+      }
+
+      .slick-prev {
+        left: 2%;
+        background-image: url('img/icons/prev.svg');
+      }
+
+      .slick-slide {
+        position: relative;
+
+        &__content {
+          z-index: 999;
+          height: 758px;
+          background-size: cover;
+          background-position: 64%;
+          padding-top: 0;
+          flex-direction: column;
+          flex-wrap: wrap;
+          display: flex !important;
+          justify-content: flex-end;
+          padding-bottom: 329px;
+
+
+
+          @include BR480Down {
+            height: 747px;
+            background-color: #0000003b;
+            background-blend-mode: color;
+          }
+
+          &--wrapper {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            padding-top: 44px;
+            padding-left: 35px;
+
+            @include BR480Down {
+              position: absolute;
+              bottom: 130px;
+            }
+          }
+
+          &--header {
+            font-family: 'Vanitas';
+            font-weight: 400;
+            color: #ffffff;
+            font-size: 50px;
+            text-transform: uppercase;
+            margin-top: 0;
+            margin-bottom: 0;
+            order: 1;
+
+
+            @include BR480Down {
+              line-height: 51px;
+              margin-bottom: 24px;
+              margin-top: 24px;
+            }
+          }
+
+          &--subheader {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            line-height: 20px;
+            color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 0;
+            order: 0;
+
+            @include BR480Down {
+              font-weight: 300;
+            }
+          }
+
+          &--link {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            color: white;
+            font-size: 10px;
+            height: 45px;
+            text-decoration: none;
+            border: 1px solid white;
+            width: 178px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            top: 17px;
+            order: 2;
+            cursor: pointer;
+            transition: all 0.25s ease-in-out;
+
+            &:hover {
+              background-color: #ffffff !important;
+              color: #000000 !important;
+            }
+
+          }
+        }
+
+        &__background {
+          background-size: cover;
+        }
+      }
+
+      .slick-next {
+        left: 92%;
+        background-image: url('img/icons/next.svg');
+
+      }
+
+    }
+
+  }
+}
+
+
+.bridal-accessories {
+
+  padding-top: 48px;
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include BR480Down {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+
+
+  &__topRow {
+    flex-basis: 100%;
+
+
+
+    &--wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+    }
+
+    &--line {
+      flex-basis: 51%;
+      height: 1px;
+      background: #D9D9D9;
+      margin-left: 24px;
+    }
+
+    &--link {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: #000000 !important;
+      text-decoration: none;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      flex-basis: 19%;
+      text-align: center;
+      position: relative;
+      &:before {
+        content: ' ';
+        background-image: url('img/icons/rightarrow.svg');
+        background-size: 15px;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        height: 20px;
+        width: 20px;
+        right: -12px;
+      }
+    }
+
+
+  }
+  &__header {
+    @include  sposa-thin-header(25px);
+    text-transform: uppercase;
+    flex-basis: 27%;
+    @include BR769Down {
+      flex-basis: 100%;
+    }
+    @include BR480Down {
+      font-family: 'Vanitas';
+      font-weight: 300;
+      font-size: 26px;
+      text-decoration: none;
+      color: #000000;
+      position: relative;
+      text-transform: uppercase;
+      flex-basis: 100%;
+      padding-left: 0;
+      letter-spacing: 5px;
+      margin-bottom: 12px;
+    }
+  }
+
+
+  &__single {
+    height: 316px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+
+  @include BR769Down {
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 24px;
+  }
+
+    @include BR480Down {
+      margin-bottom: 64px;
+      height: 175px;
+      margin-bottom: 28px;
+      margin-top: 12px;
+    }
+
+
+    a {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: #000000;
+      text-decoration: none;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: -32px;
+      width: 100%;
+      text-align: center;
+      letter-spacing: 2px;
+
+      @include BR769Down {
+        background: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+}
+
+.exploreRange {
+
+  display: flex;
+  justify-content: center;
+
+  &__header {
+    font-family: 'Vanitas';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 0;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
+
+  &__p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    line-height: 25.52px;
+  }
+
+  &__text {
+    flex-basis: 28%;
+    flex-direction: column;
+    padding: 34px;
+
+    @include BR769Down {
+      flex-basis: 100%;
+    }
+
+    @include BR480Down {
+      flex-basis: 100%;
+    }
+  }
+
+  .container {
+    width: 100%;
+    background-color: white;
+    margin-top: -88px;
+    z-index: 99;
+
+  }
+
+  .row {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .col {
+    display: flex;
+
+    @include BR480Down {
+      padding-bottom: 0;
+    }
+  }
+
+  &__bookLink {
+    @include book-appt();
+  }
+
+  &__imageCol {
+    height: 490px;
+    position: relative;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 24px;
+    flex-basis: 22%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include BR769Down {
+      flex-basis: 31%;
+    }
+    @include BR480Down {
+      flex-basis: 100%;
+      height: 212px;
+      margin: 35px;
+      margin-bottom: 0;
+      margin-top: 24px;
+    }
+
+    a {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      text-decoration: none;
+      position: absolute;
+      left: 0;
+      bottom: 12px;
+      right: 0;
+      height: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+  }
+}
+
+
+.latest-events {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  padding-bottom: 48px;
+
+  @include BR480Down {
+    margin-top: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 48px;
+  }
+
+  &__imgCol {
+    padding: 0 !important;
+  }
+
+  &__img {
+    background-image: url('img/latest-events.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 344px;
+
+    @include BR480Down {
+      background-position: top;
+      height: 90px;
+    }
+  }
+
+  &__details {
+    background: #F9F9F9;
+    padding-left: 39px;
+    padding-top: 25px;
+
+    @include BR480Down {
+      padding: 24px;
+      padding-top: 12px;
+    }
+  }
+
+  &__title {
+    @include sposa-thin-header(40px);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+
+    @include BR480Down {
+      font-size: 32px;
+    }
+  }
+
+  &__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 300;
+  }
+
+  .event {
+
+    &__row {
+      display: flex;
+      justify-content: flex-start;
+
+      @include BR480Down {
+        padding-bottom: 8px;
+        padding-top: 8px;
+      }
+
+    }
+
+
+
+    &__details {
+      padding-top: 12px;
+      padding-left: 0;
+    }
+
+    label {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      @include BR480Down {
+        font-weight: 400;
+        font-size: 17px;
+      }
+    }
+
+    &__book {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+      letter-spacing: 2px;
+      border: 1px solid #000000;
+      height: 53px;
+      display: block;
+      text-transform: uppercase;
+      position: relative;
+      width: 247px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      margin-top: 24px;
+      transition: all 0.25s ease-in-out;
+
+      &:hover {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+      }
+    }
+
+
+    &__icon {
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 24px;
+      width: 21px;
+      display: flex;
+      margin-right: 12px;
+      margin-bottom: 12px;
+    }
+
+    &__date--icon {
+      background-image: url('img/icons/datecal.svg');
+    }
+
+    &__location--icon {
+      background-image: url('img/icons/locationmap.svg');
+    }
+}
+
+
+
+.site-footer__newsletter {
+
+    width: 100%;
+
+    &--header {
+      @include sposa-thin-header(30px);
+    }
+
+  }
+
+}
+
+.testimonial {
+  background-color: #F2DBDB;
+  align-items: center;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include BR480Down {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .container {
+    padding-left: 88px;
+    padding-right: 88px;
+    @include BR480Down {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+  &__slider {
+
+    .slick-arrow {
+      background-color: transparent;
+      border: none;
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      color: transparent;
+      position: absolute;
+      top: 50%;
+      height: 31px;
+      top: 115px;
+
+      @include BR480Down {
+        display: none !important;
+      }
+
+    }
+
+    .slick-next {
+      background-image: url('img/icons/nextarrow.svg');
+      right: -12px;
+    }
+    .slick-prev {
+      background-image: url('img/icons/prevarrow.svg');
+      left: -12px;
+    }
+
+    &--slide {
+      height: 347px;
+
+      @include BR480Down {
+        height: auto;
+      }
+
+      &__content {
+        @include BR480Down {
+          text-align: center;
+        }
+        p {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 21px;
+          line-height: 35px;
+          font-weight: 300;
+          color: #000000;
+
+          @include BR480Down {
+            font-size: 18px;
+            line-height: 30.65px;
+          }
+
+        }
+      }
+
+      &__name {
+
+        @include BR480Down {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+        }
+
+        label {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+        }
+      }
+
+      &__branchVisited {
+        @include BR480Down {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+        }
+        label {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+
+    }
+  }
+}
+
+
+.our-journey {
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__img {
+    background-image: url('img/weddingimage.png');
+    background-size: cover;
+    height: 620px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 200px;
+    margin-top: 48px;
+
+    @include BR480Down {
+      margin-bottom: 0;
+      height: 595px;
+      background-image: url('img/frontpagebridgeimgmobile.jpg');
+    }
+
+
+
+    &--content {
+      height: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+
+      @include BR480Down {
+        width: 94%;
+      }
+
+      &:before {
+        content: ' ';
+        position: absolute;
+        top: -52px;
+        right: 0;
+        color: #ffffff;
+        border: 1px solid white;
+        width: 39%;
+        height: 1px;
+
+        @include BR480Down {
+          display: none;
+        }
+      }
+
+      &__header {
+        @include sposa-thin-header(45px);
+        color: #ffffff !important;
+        letter-spacing: 0 !important;
+        position: absolute;
+        left: 100px;
+        bottom: 124px;
+        margin-bottom: 0;
+
+        @include BR769Down {
+          left: 42px;
+        }
+
+        @include BR480Down {
+          left: 24px;
+          bottom: 12px;
+          font-size: 36px;
+          line-height: 38px;
+        }
+
+      }
+    }
+  }
+
+  &__columns {
+    width: auto;
+    background-color: white;
+    height: 300px;
+    display: flex;
+    position: absolute;
+    left: 100px;
+    bottom: -150px;
+    right: -1px;
+    flex-wrap: wrap;
+    @include BR769Down {
+      left: 0;
+    }
+    @include BR480Down {
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: auto;
+      position: relative;
+    }
+
+    &--col {
+      flex-basis: 50%;
+      padding: 12px;
+      padding-top: 48px;
+      padding-left: 89px;
+
+      @include BR769Down {
+        padding-left: 42px;
+        padding-right: 42px;
+        padding-bottom: 69px;
+      }
+
+      @include BR480Down {
+        padding: 32px;
+      }
+
+      @include BR480Down {
+        flex-basis: 100%;
+      }
+
+      &__header {
+        @include sposa-thin-header(25px);
+        letter-spacing: 0;
+        margin-top: 0;
+        margin-bottom: 16px;
+      }
+
+      &__text {
+        margin-top: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: black;
+        line-height: 182.3%;
+      }
+
+      &__link {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #000000 !important;
+        border: 1px solid black;
+        text-decoration: none;
+        height: 40px;
+        width: fit-content;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 24px;
+        padding-right: 24px;
+        transition: all 0.25s ease-in-out;
+        cursor: pointer;
+        text-shadow: none !important;
+
+        &:hover {
+          background-color: #000000;
+          color: #ffffff !important;
+        }
+      }
+
+    }
+
+    &--col__2 {
+      background-color: #F9F9F9;
+    }
+  }
+}
+
+
+
+.sposa {
+  &__topRow {
+    flex-basis: 100%;
+
+    @include BR480Down {
+      margin-bottom: 24px;
+    }
+
+    &--wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      @include BR769Down {
+        padding-left: 35px;
+      }
+
+      @include BR480Down {
+        padding-left: 8px;
+      }
+    }
+
+    &--line {
+      flex-basis: 51%;
+      height: 1px;
+      background: #D9D9D9;
+      margin-left: 24px;
+
+      @include BR769Down {
+        flex-basis: 0;
+        display: none;
+      }
+
+      @include BR480Down {
+        display: none;
+      }
+    }
+
+    &--link {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      color: #000000 !important;
+      text-decoration: none;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      flex-basis: 19%;
+      text-align: center;
+      position: relative;
+
+      @include BR769Down {
+        flex-basis: 100%;
+        text-align: left;
+      }
+
+      @include BR480Down {
+        flex-basis: 59%;
+        padding-left: 0;
+        text-align: start;
+      }
+
+      &:before {
+        content: ' ';
+        background-image: url('img/icons/rightarrow.svg');
+        background-size: 15px;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        height: 20px;
+        width: 20px;
+        right: -12px;
+
+        @include BR769Down {
+          right: unset;
+          left: 170px;
+        }
+
+        @include BR480Down {
+          background-size: 11px;
+          background-position: center;
+          background-repeat: no-repeat;
+          position: absolute;
+          height: 12px;
+          width: 12px;
+          right: 14px;
+          top: 2px;
+        }
+      }
+    }
+  }
+}
+
+.instagram {
+
+  &__slider {
+    display: flex;
+
+    @include BR769Down {
+      flex-wrap: wrap;
+    }
+
+    @include BR480Down {
+      display: block;
+    }
+
+    &--img {
+      height: 318px;
+      background-size: cover;
+      background-position: center center;
+      flex-basis: 20%;
+
+      @include BR769Down {
+        flex-basis: 50%;
+      }
+
+      @include BR480Down {
+        height: 400px;
+        flex-basis: unset;
+      }
+
+      &:nth-last-child {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  &__follow {
+    height: 92px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @include BR480Down {
+      height: 74px;
+    }
+
+    &--link {
+      @include sposa-thin-header(25px);
+      color: #000000 !important;
+      letter-spacing: 0;
+      font-weight: normal;
+      position: relative;
+
+      &:before {
+        content: ' ';
+        background-image: url('img/icons/instagramfollowarrow.svg');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        right: -33px;
+        top: 16px;
+      }
+    }
+  }
+}
+
+
+#gform_submit_button_1 {
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background: transparent !important;
+    color: black !important;
+    border: 1px solid black;
+
+  }
+}
+
+
+
+.book-appt {
+
+  background: #ffffff;
+  overflow-x: hidden;
+
+
+
+  &__content {
+
+    .row {
+      @include BR480Down {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &--header {
+      @include sposa-thin-header(30px);
+
+      @include BR480Down {
+        letter-spacing: 0.1em;
+      }
+    }
+
+    &--wrapper {
+      padding-left: 69px;
+      padding-right: 30px;
+      display: flex;
+      justify-content: flex-end;
+
+      @include BR480Down {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 12px;
+      }
+
+
+      &__container {
+        max-width: 533px;
+        width: 100%;
+      }
+    }
+
+    &--text {
+      font-family: 'Montserrat', sans-serif;
+      color: #000000;
+      font-size: 14px;
+      line-height: 24.96px;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+    }
+
+  }
+
+  &__img {
+    background-image: url('img/bookapptimg.png');
+    display: flex;
+    height: 856px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include BR480Down {
+      height: 300px;
+    }
+  }
+
+
+  &__bar {
+    height: 69px;
+    background: #F9F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 32px;
+
+
+    span {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 200px;
+      letter-spacing: 3px;
+      color: #000000;
+    }
+  }
+
+  &__form {
+
+    .gfield_label {
+      font-family: 'Montserrat', sans-serif !important;
+      letter-spacing: 1px;
+      color: #000000;
+      font-weight: 300 !important;
+      padding-top: 24px;
+    }
+
+    .ginput_container {
+      margin-top: 16px !important;
+    }
+
+    input[type="text"] {
+      padding-left: 24px !important;
+      padding-top: 13px !important;
+      padding-bottom: 13px !important;
+      border: 1px solid #cccccc;
+      width: 100% !important;
+
+      &:placeholder {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: #000000;
+        letter-spacing: 1px;
+      }
+    }
+
+    input[type="text"]::placeholder {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: #000000;
+      letter-spacing: 0.5px;
+    }
+
+    #gform_submit_button_2 {
+      height: 50px;
+      width: 164px;
+      color: white;
+      display: flex;
+      box-shadow: none !important;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      color: white;
+      justify-content: center;
+      position: relative;
+      align-items: center;
+      background-color: #000000 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 2px !important;
+      border: none !important;
+      border-radius: 0 !important;
+      cursor: pointer !important;
+      transition: all 0.25s ease-in-out;
+
+      &:hover {
+        background-color: white !important;
+        color: black !important;
+        border: 1px solid black !important;
+      }
+    }
+
+  }
+}
+
+.menu-item {
+  &:hover {
+    .sub-menu {
+      display: flex !important;
+      flex-direction: column;
+      width: 150px;
+      box-shadow: none;
+      background: white;
+      position: absolute;
+      height: 106px;
+      top: 19px;
+      padding-top: 36px;
+      padding-left: 12px;
+      left: -16px;
+      li {
+        padding-bottom: 12px;
+      }
+    }
+  }
+}
+
+
+.show-sub-menu {
+  display: flex !important;
+  flex-direction: column;
+  width: 150px;
+  box-shadow: none;
+  background: white;
+  position: absolute;
+  height: 95px;
+  top: 19px;
+  padding-top: 16px;
+  padding-left: 12px;
+  left: -16px;
+    li {
+      padding-bottom: 12px;
+    }
+}

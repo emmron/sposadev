@@ -1,0 +1,31 @@
+.sposa-page-banner {
+  background-image: url('img/featuredimage-background.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 216px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f2dbdbde;
+  background-blend-mode: lighten;
+
+  @include BR480Down {
+    height: 315px;
+  }
+
+  &__title {
+    font-family: 'Vanitas';
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 100;
+    letter-spacing: 6px;
+  }
+
+}

@@ -1,0 +1,16 @@
+html {
+
+  margin-top: 0 !important;
+
+  @include BR480Down {
+    margin-top: 0 !important;
+  }
+
+
+  @include BR480Down {
+    overflow-x: hidden !important;
+  }
+
+
+}
+

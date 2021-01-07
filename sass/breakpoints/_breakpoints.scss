@@ -1,0 +1,27 @@
+// Small tablets and large smartphones (landscape view)
+
+
+@mixin BR1450Down()
+{
+  @media (max-width: 1451px) {
+    @content;
+  }
+}
+
+
+
+@mixin BR769Down() {
+  @media (max-width: 769px) {
+    @content;
+  }
+}
+
+
+
+@mixin BR480Down()
+{
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+

@@ -1,0 +1,127 @@
+.page-template-page-events {
+  background: #ffffff !important;
+  padding-top: 200px;
+
+  .sposa-event {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 48px;
+
+    &__link {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000000;
+      letter-spacing: 1px;
+      height: 45px;
+      width: 125px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: 1px solid #000000;
+      margin-left: 48px;
+      margin-bottom: 48px;
+      cursor: pointer;
+      transition: all 0.25s ease-in-out;
+
+      &:hover {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+      }
+    }
+    &__date {
+      span {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 2px;
+        position: relative;
+        display: block;
+        padding-bottom: 4px;
+        padding-top: 12px;
+      }
+    }
+    &__image {
+      height: 244px;
+      width: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: flex;
+      position: relative;
+    }
+
+    &__wrapper {
+      width: 96%;
+      background-color: #F9F9F9;
+    }
+
+    &__details {
+
+      padding: 48px;
+      min-height: 220px;
+      padding-top: 36px;
+
+      p {
+        line-height: 27px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: #000000;
+        letter-spacing: 1px;
+        margin-top: 12px;
+      }
+    }
+
+    &__name {
+      @include sposa-thin-header(40px);
+      color: #000000;
+      position: relative;
+      letter-spacing: 6px !important;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+  }
+
+  .sposa-events {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    position: relative;
+    top: -102px;
+    background: top;
+    background-color: white;
+    padding-top: 36px;
+
+    .container {
+      max-width: 95% !important;
+    }
+  }
+
+  .sposa-events__wrapper {
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include BR1450Down {
+      max-width: 1280px;
+    }
+  }
+
+
+
+  main#primary {
+    display: flex;
+    justify-content: center;
+  }
+
+
+}
+

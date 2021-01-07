@@ -1,0 +1,137 @@
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+@mixin black-uppercase-link {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 12px;
+	letter-spacing: 2px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+@mixin book-appt() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 12px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	margin-top: 24px;
+	color: #000000 !important;
+	width: 200px;
+	height: 40px;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	text-decoration: none;
+	transition: all 0.25s ease-in-out;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #000000;
+		color: #ffffff !important;
+	}
+}
+
+@mixin sposa-thin-header($font-size) {
+	font-family: 'Vanitas';
+	font-size: $font-size;
+	text-decoration: none;
+	color: #000000;
+	position: relative;
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: 0.2em;
+}
+
+@mixin dropdownarrow() {
+	content: ' ';
+	background-image: url('img/icons/downarrow.svg');
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 2.5px;
+	right: -12px;
+	cursor: pointer;
+}
+
+@mixin white-product-link() {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 12px;
+	color: #000000;
+	width: 100%;
+	height: 55px;
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-top: 24px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+@mixin sposa-black-btn() {
+	height: 60px;
+	width: 100%;
+	background-color: #000000;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase !important;
+	text-decoration: none;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #FFFFFF !important;
+	transition: 0.25s all ease-in-out;
+	cursor: pointer;
+
+	&:hover {
+
+		background-color: transparent;
+		color: black !important;
+		border: 1px solid #000000;
+
+	}
+
+}
+
+@mixin BR1450Down() {
+	@media (max-width: 1450px) {
+		@content;
+	}
+}
+
+
+
+@mixin BR480Down() {
+	@media (max-width: 480px) {
+		@content;
+	}
+}
+

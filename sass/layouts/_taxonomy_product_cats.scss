@@ -1,0 +1,320 @@
+
+
+.sposa-product {
+
+  width: auto !important;
+  flex-basis: 27%;
+
+  @include BR480Down {
+    flex-basis: 91%;
+  }
+
+  a:visited {
+    color: transparent !important;
+  }
+
+  a {
+    text-decoration: none !important;
+    transition: all 0.25s ease-in-out;
+    color: #000000 !important;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #000000;
+      color: #ffffff !important;
+    }
+  }
+
+  .product_type_simple {
+    display: none !important;
+  }
+
+  &__image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: #0000001c;
+    background-blend-mode: color;
+    object-fit: cover;
+    position: static;
+    -webkit-transform : translate3d(0,0,0);
+    overflow: hidden;
+    height: 554px;
+    transform: translateZ(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    -webkit-transform: translateZ(0);
+    -webkit-font-smoothing: antialiased;
+    &:before {
+      content: ' ';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #0000002e;
+      width: 100%;
+      height: 100%;
+      z-index: 99;
+    }
+    label {
+      z-index: 999;
+    }
+
+  }
+
+  &__title {
+    @include sposa-thin-header(25px);
+    color: #ffffff !important;
+    text-decoration: none !important;
+    letter-spacing: 0 !important;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+  }
+
+  &__link {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+    width: 100%;
+    height: 55px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+}
+
+body.tax-product_cat {
+  overflow-x: hidden !important;
+  background: #ffffff !important;
+  padding-top: 170px;
+}
+
+.tax-product_cat {
+
+  li {
+    margin: 0;
+  }
+  nav.woocommerce-breadcrumb,
+  .woocommerce-products-header,
+  .woocommerce-result-count {
+    display: none;
+  }
+
+  .woocommerce-ordering {
+    display: none;
+  }
+  ul.products {
+    width: 100%;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 48px;
+  }
+
+}
+
+
+.woocommerce-info {
+  background: #ffffff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: black;
+}
+
+
+.woocommerce-MyAccount-navigation {
+  ul {
+    list-style: none;
+    li {
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+}
+
+.woocommerce-pagination {
+  .page-numbers {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      color: #000000;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+  }
+}
+
+.woocommerce-account {
+  #secondary {
+    display: none !important;
+  }
+
+  .form-row:not(.woocommerce-form-row) {
+    display: flex;
+    flex-wrap: wrap;
+
+    label {
+      flex-basis: 100%;
+      padding-top: 0;
+      padding-bottom: 24px;
+    }
+  }
+  input[type="text"] {
+    padding-left: 24px !important;
+    padding-top: 13px !important;
+    padding-bottom: 13px !important;
+    border: 1px solid #cccccc;
+    width: 100% !important;
+    margin-top: 12px !important;
+
+    &:placeholder {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: #000000;
+      letter-spacing: 1px;
+    }
+  }
+
+  input[type="text"]::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0.5px;
+  }
+
+
+  input[type="password"] {
+    padding-left: 24px !important;
+    padding-top: 13px !important;
+    padding-bottom: 13px !important;
+    border: 1px solid #cccccc;
+    width: 100% !important;
+    margin-top: 12px !important;
+    &:placeholder {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: #000000;
+      letter-spacing: 1px;
+    }
+  }
+
+  h2 {
+    @include sposa-thin-header(25px);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  label {
+    font-family: 'Montserrat', sans-serif !important;
+    letter-spacing: 1px;
+    color: #000000;
+    font-weight: 300 !important;
+    padding-top: 24px;
+  }
+
+  input[type="password"]::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    letter-spacing: 0.5px;
+  }
+  .entry-title {
+    @include sposa-thin-header(25px);
+  }
+  .entry-content {
+    display: flex;
+    justify-content: center;
+
+    .woocommerce-MyAccount-navigation {
+      ul {
+        padding-left: 0;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        li {
+          flex-basis: 13%;
+          display: flex;
+          justify-content: center;
+          a {
+            text-decoration: none !important;
+            color: #000000 !important;
+            letter-spacing: 1px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+          }
+
+        }
+      }
+    }
+
+    .woocommerce-MyAccount-content {
+      text-align: center;
+    }
+  }
+  .entry-header {
+      background-image: url('img/featuredimage-background.png');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 216px;
+      width: 100%;
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: #f2dbdbde;
+      background-blend-mode: lighten;
+
+      @include BR480Down {
+        height: 315px;
+      }
+
+      .entry-title {
+        font-family: 'Vanitas';
+        font-size: 35px;
+        text-transform: uppercase;
+        color: #000000;
+        text-align: center;
+        margin-top: 0;
+        font-weight: 100;
+        letter-spacing: 6px;
+      }
+  }
+}
+
+
+.sposa-product__img {
+  height: 554px;
+  width: 100%;
+  object-fit: cover;
+  -webkit-transform : translate3d(0,0,0);
+  will-change: transform;
+}
+
+

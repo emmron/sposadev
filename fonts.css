@@ -1,0 +1,10 @@
+@font-face {
+	font-family: "Vanitas";
+	src:
+		url("fonts/vanitas-regular-webfont.eot?") format("eot"),
+		url("fonts/vanitas-regular-webfont.woff") format("woff"),
+		url("fonts/vanitas-regular-webfont.ttf") format("truetype"),
+		url("fonts/vanitas-regular-webfont.svg#webfontfvFLBU0N") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}

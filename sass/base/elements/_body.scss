@@ -1,0 +1,10 @@
+body {
+	background: $color__background-body; // Fallback for when there is no custom background color defined.
+	background: #ffffff !important;
+	padding-top: 162px !important;
+	overflow-x:hidden !important;
+	@include BR480Down {
+		padding-top: 0 !important;
+	}
+
+}

@@ -1,0 +1,136 @@
+.our-story {
+  background: #ffffff !important;
+
+  article {
+    display: none;
+  }
+
+  &__row--1 {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    @include BR480Down {
+      padding: 24px;
+    }
+    &__img {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 100%;
+      position: relative;
+      height: 305px;
+    }
+
+    &__content {
+      padding-left: 100px;
+      padding-right: 146px;
+
+
+      @include BR480Down {
+        padding-left: 6px;
+        padding-right: 0;
+      }
+
+    }
+
+    &__header {
+      @include sposa-thin-header(25px);
+      line-height: 33.75px;
+      letter-spacing: 0;
+    }
+    &__subheader {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 25.52px;
+    }
+  }
+
+  &__hero {
+    background-size: cover;
+    height: 995px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    position: relative;
+    padding-top: 24px;
+
+    @include BR480Down {
+      padding: 24px;
+      height: auto;
+    }
+
+    &--imgCol {
+      padding-top: 32px;
+      @include BR480Down {
+        padding-top: 6px;
+      }
+    }
+
+    &--header {
+      @include sposa-thin-header(40px);
+      color: #ffffff !important;
+      line-height: 46px;
+      letter-spacing: 2px;
+    }
+
+    &--text {
+      color: #ffffff;
+      font-size: 15px;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 1px;
+      line-height: 26px;
+      margin-bottom: 48px;
+    }
+
+    &--link {
+      display: flex;
+      position: relative;
+      justify-content: flex-start;
+      margin-bottom: 24px;
+      margin-top: 12px;
+      transition: all 0.25s ease-in-out;
+      background: #F2DBDB;
+      text-align: start;
+      padding-left: 24px;
+      align-items: center;
+      color: #000000;
+      text-decoration: none;
+      width: 263px;
+      height: 70px;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      cursor: pointer;
+      position: relative;
+
+      &:visited {
+        color: #000000 !important;
+      }
+
+      &:before {
+        content: ' ';
+        height: 12.5px;
+        width: 14px;
+        position: absolute;
+        right: 28px;
+        display: flex;
+        background-image: url(img/icons/rightarrow.svg);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+      }
+
+      &:hover {
+        background: #ffffff;
+        color: #000000;
+      }
+    }
+
+  }
+}

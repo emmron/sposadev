@@ -1,0 +1,7 @@
+.main-navigation {
+
+  @include BR480Down {
+    display: none;
+  }
+
+}

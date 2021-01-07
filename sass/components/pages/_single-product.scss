@@ -1,0 +1,457 @@
+.single-product {
+  background: #ffffff !important;
+
+  @include BR480Down {
+    padding-top: 0 !important;
+  }
+
+  .sposa-brides {
+    @include BR480Down {
+      display: none;
+    }
+  }
+
+  .modaal-inner-wrapper {
+    padding-top: 142px;
+    padding-bottom: 0;
+  }
+
+  .modaal-content-container {
+    height: 547px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .woocommerce-product-gallery {
+    display: none;
+  }
+
+  &__collection {
+
+    @include BR480Down {
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 0;
+    }
+
+    &--link {
+      @include white-product-link();
+      color: #000000 !important;
+      text-decoration: none !important;
+      transition: all 0.25s ease-in-out;
+      &:hover {
+        background: #000000 !important;
+        color: #ffffff !important;
+
+      }
+    }
+
+    &--title {
+      @include sposa-thin-header(25px);
+      color: white;
+      margin-bottom: 0;
+      letter-spacing: 0 !important;
+    }
+
+    &--header {
+      display: flex;
+      flex-basis: 100%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      @include sposa-thin-header(25px);
+      text-transform: uppercase;
+    }
+
+    &--col {
+      margin-bottom: 24px;
+    }
+
+      &--img {
+        height: 554px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 24px;
+        background-color: #00000061;
+        background-blend-mode: color;
+
+        @include BR480Down {
+          height: 435px;
+        }
+      }
+
+  }
+
+  &__info {
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 32px;
+
+    li {
+      height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      border-top: 1px solid #D2D2D2;
+      position: relative;
+      transition: all 0.25s ease-in-out;
+      cursor: pointer;
+
+      &:before {
+        content: ' ';
+        width: 12px;
+        height: 12px;
+        background-image: url('img/icons/downarrow.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        right: 32px;
+        top: 24px;
+      }
+    }
+
+    li:last-child {
+      border-bottom: 1px solid #D2D2D2;
+    }
+
+    &--lbl {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: #000000;
+      font-weight: 400;
+      letter-spacing: 1px;
+
+      @include BR480Down {
+        padding-left: 12px;
+      }
+    }
+  }
+
+  &__hero {
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    @include BR480Down {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+  }
+
+  &__hero--slider {
+    z-index: 99;
+    position: relative;
+    right: -35px;
+    bottom: 12px;
+
+    @include BR480Down {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    .slick-arrow {
+      display: none !important;
+    }
+
+    @include BR480Down {
+      right: 0;
+    }
+
+  }
+
+  &__details {
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 12px;
+    @include BR480Down {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    color: #000000;
+    line-height: 182.3%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__enquiry {
+    height: 60px;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase !important;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF !important;
+    transition: 0.25s all ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+
+      background-color: transparent;
+      color: black !important;
+      border: 1px solid #000000;
+
+    }
+
+  }
+
+
+
+  &__title {
+    @include sposa-thin-header(45px);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    @include BR480Down {
+      font-size: 39px !important;
+      padding-left: 12px;
+    }
+  }
+
+  &__category {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 0;
+
+    @include BR480Down {
+      padding-left: 12px;
+    }
+
+  }
+
+  &__rightCol {
+
+    padding: 0 !important;
+    padding-left: 28px !important;
+
+    @include BR480Down {
+      padding-left: 0 !important;
+    }
+
+    &__wrapper {
+      background: #F9F9F9;
+      height: 635px;
+      width: 100%;
+      position: relative;
+
+      @include BR480Down {
+        height: auto;
+        padding-bottom: 24px;
+      }
+    }
+
+    .woocommerce-breadcrumb {
+      height: 60px;
+      background: white;
+      padding: 12px;
+      padding-left: 24px;
+      display: flex;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+      color: #000000;
+      text-decoration: none !important;
+      text-transform: uppercase !important;
+      letter-spacing: 1px !important;
+
+      @include BR480Down {
+        display: none;
+      }
+
+      a {
+        text-decoration: none !important;
+        color: #000000 !important;
+      }
+    }
+
+  }
+
+
+    &__hero {
+
+      &--slide {
+
+        &__img {
+          height: 701px;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-position: center center;
+          margin-top: 24px;
+
+          @include BR480Down {
+            height: 451px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin-top: 42px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+}
+
+
+.sposa-product {
+
+  &__link {
+
+
+  }
+
+}
+
+#gform_3 {
+  .gform_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #field_3_1 {
+    flex-basis: 100%;
+  }
+
+  #field_3_2 {
+    height: 90px;
+  }
+}
+#gform_submit_button_3 {
+  height: 60px;
+  width: 302px;
+  background-color: #000000;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase !important;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFFFFF !important;
+  transition: 0.25s all ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+
+    background-color: transparent;
+    color: black !important;
+    border: 1px solid #000000;
+
+  }
+}
+#gform_wrapper_3 {
+  height: 100%;
+  form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+#gform_fields_3 {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-left: 48px;
+  width: 97%;
+  #field_3_2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+  }
+
+  #field_3_3 {
+    position: absolute;
+    right: 0;
+    top: 81px;
+    width: 50%;
+  }
+
+  #field_3_4 {
+    position: absolute;
+    right: 0;
+    top: 166px;
+    width: 50%;
+  }
+  #field_3_5 {
+    position: absolute;
+    right: 0;
+    top: 236px;
+    width: 50%;
+  }
+
+  .gfield_checkbox {
+    li {
+
+      input[type="checkbox"] {
+        visibility: hidden;
+      }
+
+      border: 1px solid #CCCCCC;
+      width: 242px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 58px;
+      margin-bottom: 12px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+      left: 2px;
+      cursor: pointer;
+      transition: all 0.25s ease-in-out;
+
+      &:hover {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+      }
+    }
+  }
+
+
+  li {
+    flex-basis: 50%;
+    .gfield_label {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      letter-spacing: 1px;
+      font-size: 14px;
+      color: #000000 !important;
+    }
+
+    input[type="text"] {
+      width: 81% !important;
+      border-radius: 0;
+      border: 1px solid #CCCCCCCC;
+      height: 38px;
+    }
+  }
+}

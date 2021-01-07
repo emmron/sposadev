@@ -1,0 +1,154 @@
+
+
+.sposa-brides {
+
+  background: #ffffff !important;
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  &__hero {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff !important;
+
+    &--imageCol {
+      height: 618px;
+      width: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: flex;
+    }
+
+    &--contentCol {
+
+      height: auto;
+      width: 100%;
+      position: relative;
+      right: -103px;
+      background: white;
+      top: 21px;
+      padding: 24px;
+      padding-right: 48px;
+      padding-top: 12px;
+
+      h1 {
+        @include sposa-thin-header(50px);
+        text-transform: uppercase;
+      }
+
+      h2 {
+        @include sposa-thin-header(30px);
+        letter-spacing: 0;
+        margin-bottom: 0;
+      }
+
+      &__divider {
+        height: 1px;
+        background-color: #B1B1B1;
+        width: 85%;
+      }
+
+      &__text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: #000000;
+        line-height: 25.52px;
+      }
+
+      &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 240px;
+        background-color: #000000;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: white !important;
+        text-decoration: none;
+        height: 60px;
+      }
+
+
+    }
+  }
+
+  .single-bride {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    object-fit: cover;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    &__image {
+      background-size: cover;
+      height: 450px;
+      width: 100%;
+      background-position: center center;
+      display: none !important;
+    }
+
+    &__col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-basis: 100%;
+    }
+
+    &__title {
+      font-family: 'Cormorant', serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      background: white;
+      position: absolute;
+      z-index: 999;
+      width: 65%;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 1px;
+      padding-left: 24px;
+      bottom: 0;
+      right: 0;
+      transition: all 0.25s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        background-color: #F2DBDB;
+      }
+
+    span {
+      position: relative;
+      &:before {
+        content: ' ';
+        position: absolute;
+        background-image: url('img/icons/rightarrow.svg');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 12px;
+        top: 12px;
+        right: -24px;
+      }
+    }
+
+    }
+
+  }
+
+}

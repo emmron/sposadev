@@ -1,0 +1,117 @@
+.sposa-gallery {
+  .container {
+    max-width: 90%;
+    position: relative;
+    top: -75px;
+  }
+}
+
+.sposa-bride {
+
+  &__content {
+    padding-bottom: 127px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    &--img {
+      height: 370px;
+      width: 768px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      &__wrapper {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+
+  &__question {
+      @include sposa-thin-header(25px);
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    padding-top: 48px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  &__answer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    line-height: 25.52px;
+    text-align: center;
+    padding-bottom: 24px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__single {
+      height: 370px;
+      flex-basis: 31%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    &__single:nth-child(3) {
+      position: relative;
+      top: 24px;
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+  }
+  &__intro {
+
+    .container {
+      background: #F9F9F9;
+      padding-left: 240px;
+      padding-right: 240px;
+      padding-bottom: 80px;
+    }
+
+    &--header {
+      @include sposa-thin-header(50px);
+      text-align: center;
+      text-transform: uppercase;
+      position: relative;
+      &:before {
+        content: ' ';
+        height: 0.5px;
+        width: 100%;
+        position: absolute;
+        background-color: #B1B1B1;
+        left: 0;
+        top: 90px;
+      }
+    }
+
+    &--date {
+      font-family: 'Cormorant', serif;
+      font-size: 20px;
+      font-weight: 200;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      text-align: center;
+      color: #000000 !important;
+    }
+
+
+
+  }
+}

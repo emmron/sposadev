@@ -1,0 +1,93 @@
+.sposa-brides {
+	background: #ffffff !important;
+}
+
+.sposa-brides__hero {
+	display: flex;
+	justify-content: center;
+	background-color: #ffffff !important;
+}
+
+.sposa-brides__hero--imageCol {
+	height: 500px;
+	width: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: flex;
+}
+
+.sposa-brides__hero--contentCol {
+	height: 65%;
+	width: 100%;
+	position: relative;
+	right: -149px;
+	background: white;
+	top: 57px;
+	padding-top: 0px;
+}
+
+.sposa-brides__hero--contentCol h1 {
+	text-transform: uppercase;
+}
+
+.sposa-brides__hero--contentCol h2 {
+	letter-spacing: 0;
+}
+
+.sposa-brides__hero--contentCol__divider {
+	height: 1px;
+	background-color: #B1B1B1;
+	width: 85%;
+}
+
+.sposa-brides .single-bride {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	object-fit: cover;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+.sposa-brides .single-bride__image {
+	background-size: cover;
+	height: 450px;
+	width: 100%;
+	background-position: center center;
+	display: none !important;
+}
+
+.sposa-brides .single-bride__col {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.sposa-brides .single-bride__wrapper {
+	display: flex;
+	flex-basis: 100%;
+}
+
+.sposa-brides .single-bride__title {
+	font-family: 'Cormorant', serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	background: white;
+	position: absolute;
+	z-index: 999;
+	width: 65%;
+	height: 54px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 1px;
+	padding-left: 24px;
+	bottom: 0;
+	right: 0;
+}
+
+/*# sourceMappingURL=page-sposa-brides.css.map */

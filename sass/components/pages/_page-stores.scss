@@ -1,0 +1,169 @@
+.contact-us {
+
+  background: #ffffff !important;
+
+  &__content {
+
+    .container {
+      position: relative;
+      top: -60px;
+      background: white;
+      padding-top: 17px;
+      padding-left: 42px;
+      padding-right: 42px;
+
+      @include BR480Down {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+    }
+    &--imgCol {
+      height: 155px;
+      width: 100%;
+      background: url('img/contactusbanner.jpg') !important;
+      background-size: cover;
+      background-position: center center;
+      display: flex;
+      background-repeat: no-repeat;
+    }
+  }
+
+
+  &__stores {
+
+
+    input[type="text"] {
+      padding-left: 24px !important;
+      padding-top: 13px !important;
+      padding-bottom: 13px !important;
+      border: 1px solid #cccccc;
+      width: 100% !important;
+
+      &:placeholder {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: #000000;
+        letter-spacing: 1px;
+      }
+    }
+
+    input[type="text"]::placeholder {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: #000000;
+      letter-spacing: 0.5px;
+    }
+
+    .store__message {
+
+      &--header {
+        @include sposa-thin-header(30px)
+        text-transform: uppercase;
+      }
+    }
+
+
+    .store {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding-right: 24px;
+      @include BR480Down {
+        padding-right: 0;
+      }
+      &__info {
+        width: 83%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      &__header {
+        @include sposa-thin-header(23px);
+        color: #000000;
+        text-transform: uppercase;
+      }
+
+      &__phone {
+        padding-top: 24px;
+      }
+
+      &__message {
+        @include sposa-black-btn();
+      }
+
+      &__address {
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 29.17px;
+        flex-basis: 100%;
+      }
+
+      &__phone, &__email {
+        flex-basis: 100%;
+      }
+
+      &__hours {
+        padding-top: 0;
+      }
+
+      label {
+        a {
+          font-family: 'Montserrat', sans-serif;
+          text-decoration: none !important;
+          cursor: pointer !important;
+          transition: all 0.25s ease-in-out;
+          font-size: 16px;
+          letter-spacing: 1px;
+          line-height: 29.17px;
+          color: #000000 !important;
+
+          &:visited {
+            color: #000000 !important;
+          }
+
+        }
+      }
+
+      &__hours {
+
+        &--ul {
+          list-style: none;
+          padding-left: 0;
+          margin-left: 0;
+
+          &__li {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-apart;
+            margin-top: 12px;
+
+            span {
+              flex-basis: 50%;
+              font-family: 'Montserrat', sans-serif;
+              color: #000000;
+              letter-spacing: 1px;
+              line-height: 27.9px;
+              font-weight: 300;
+              font-size: 16px;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .acf-map {
+    border: 0 !important;
+    height: 534px !important;
+  }
+
+
+}
